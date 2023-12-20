@@ -14,6 +14,11 @@
     --border1:.2rem solid rgba(0,0,0,.1);
     --outline:.1rem solid rgba(0,0,0,.1);
     --outline-hover:.2rem solid var(--black);
+
+    --primary-color: #ff3c78;
+    --light-black: rgba(0, 0, 0, 0.89);
+    --white: #fff;
+    --grey: #aaa;
 }
 
 * {
@@ -78,7 +83,7 @@ section {
     border: var(--border);
     border-radius: 10px;
     color: white;
-    background: orange;
+    background: var(--orange);
     cursor: pointer;
     margin-top: 1rem;
     font-size: 1.7rem;
@@ -87,7 +92,7 @@ section {
 }
 
 .btn1:hover {
-    background: #ff9900; /* Change the background color on hover */
+    background: var(--orange);
     transform: scale(1.05); /* Add a slight scale effect on hover */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Enhance the box shadow on hover */
 }
@@ -160,9 +165,9 @@ section {
 /* HOME */
 
 .home {
-    min-height: 100vh;
+    height: 100vh;
     padding-top: 12rem;
-    background: url(../image/smartMove.jpeg) no-repeat;
+    background: url(../image/amijivdbkgd.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -203,24 +208,8 @@ section {
 
 .home .row .content h3 {
     font-size: 6.5rem;
-    color: var(--main-color);
+    color: #dae07e;
     text-transform: uppercase;
-}
-
-.home .image-slider {
-    text-align: center;
-    padding: 3rem 0;
-}
-
-.home .image-slider img {
-    height: 9rem;
-    margin: 0 .5rem;
-    cursor: pointer;
-    margin-top: 5rem;
-}
-
-.home .image-slider img:hover {
-    transform: translateY(-2rem);
 }
 
 /* ABOUT */
@@ -521,7 +510,7 @@ section {
     }
 
     .header {
-        padding: 3rem;
+        padding: 1rem;
     }
 
     section {
@@ -621,7 +610,7 @@ section {
 
 .categories1 .box-container1 .box1 img{
     margin:1rem 0;
-    height:15rem;
+    height:20rem;
 }
 
 .categories1 .box-container1 .box1 h3{
@@ -669,3 +658,243 @@ section {
     background: var(--orange);
     color:#fff;
 }
+
+.cards {
+    margin: 7.5rem 8% 0;
+}
+
+.card-supervisor {
+    border-radius: .5rem;
+    padding: 2.5rem 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 1rem 2rem .5rem #dedede;
+    border-top: .5rem solid hsl(119, 100%, 22%);
+}
+
+.card-team-builder {
+    border-radius: .5rem;
+    padding: 2.5rem 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 1rem 2rem .5rem #dedede;
+    border-top: .5rem solid hsl(119, 100%, 22%);
+}
+
+.card-karma {
+    border-radius: .5rem;
+    padding: 2.5rem 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 1rem 2rem .5rem #dedede;
+    border-top: .5rem solid hsl(119, 100%, 22%);
+}
+
+.card-calculator {
+    border-radius: .5rem;
+    padding: 2.5rem 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 1rem 2rem .5rem #dedede;
+    border-top: .5rem solid hsl(119, 100%, 22%);
+}
+
+.card-title {
+    margin: 0;
+    font-size: 2rem;
+    color: hsl(234, 12%, 34%);
+}
+
+.card-paragraph {
+    margin: 0;
+    font-size: 1.3rem;
+    color: hsl(229, 6%, 66%);
+}
+
+.card-image {
+    padding-top: 3rem;
+    display: flex;
+    justify-content: right;
+}
+
+@media (min-width: 680px) {
+    .header-paragraph {
+        font-size: 1.4rem;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;       
+    }
+}
+
+@media (min-width: 1250px) {
+        
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "start mid1 end"
+        "start mid2 end";       
+    }
+
+    .card-supervisor  {
+        grid-area: start;
+        align-self: center;
+    }
+
+    .card-team-builder {
+        grid-area: mid1;
+    }
+    .card-karma {
+        grid-area: mid2;
+    }
+    .card-calculator {
+        grid-area: end;
+        align-self: center;
+    }
+
+}
+
+.containar {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.best-seller {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.best-seller .red {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.best-seller .blue {
+    color: #8989ce;
+    cursor: pointer;
+}
+
+.best-seller .white {
+    color: var(--light-black);
+    cursor: pointer;
+}
+
+.best-seller .grey {
+    color: grey;
+    cursor: pointer;
+}
+
+.best-seller .brown {
+    color: rgb(175, 53, 53);
+    cursor: pointer;
+}
+
+.best-seller .yellow {
+    color: #ffff00;
+    cursor: pointer;
+}
+
+.best-seller .orange {
+    color: #ffa500;
+    cursor: pointer;
+}
+
+.best-seller .green {
+    color: #008000;
+    cursor: pointer;
+}
+
+.seller h2 {
+    margin-top: 65px;
+    margin-bottom: 20px;
+}
+
+.seller .best-p1 {
+    width: 250px;
+    height: 370px;
+    /* border: 2px solid black; */
+}
+
+.seller .best-p1 img {
+    height: 250px;
+    width: 250px;
+}
+
+.seller .best-p1 .price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.seller .best-p1 .price .colors input[type="radio"] {
+    color: #000;
+    background-color: #000;
+}
+
+.best-seller .buy-now a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.seller a:hover {
+    color: #f05e8a;
+}
+
+.best-seller .buy-now button,
+.best-seller .add-cart button {
+    padding: 10px 15px;
+    margin-top: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #0c8c00;
+    color: var(--white);
+    border: none;
+    border-radius: 15px;
+    font-weight: 500;
+    border: 1px solid #0c8c00;
+    transition: 0.5s;
+}
+
+.best-seller .buy-now button:hover,
+.best-seller .add-cart button:hover {
+    background-color: var(--white);
+    font-weight: 600;
+}
+
+.best-seller .buy-now button:hover a,
+.best-seller .add-cart button:hover a {
+    color: #0c8c00;
+}
+
+
+/* .best-seller .add-cart button {
+    padding: 5px 5px;
+    margin-top: 5px;
+    font-size: 14px;
+    cursor: pointer;
+} */
+
+
+@media (max-width: 500px) {
+    .best-seller {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .best-seller img {
+        padding-top: 40px;
+    }
+}
+
+@media(min-width: 501px) and (max-width: 768px) {
+    .best-seller {
+        display: flex;
+        flex-direction: column;
+    }
+    .best-seller img {
+        padding-top: 40px;
+    }
+}
+
+

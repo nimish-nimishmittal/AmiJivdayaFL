@@ -11,13 +11,6 @@ window.onscroll = () => {
     navbar.classList.remove('active');
 };
 
-document.querySelectorAll('.image-slider img').forEach(images => {
-    images.onclick = () => {
-        var src = images.getAttribute('src');
-        document.querySelector('.main-home-image').src = src;
-    };
-});
-
 var swiper = new Swiper(".review-slider", {
     spaceBetween: 20,
     pagination: {
@@ -39,3 +32,28 @@ var swiper = new Swiper(".review-slider", {
         }
     },
 });
+
+
+(document).ready(function () {
+    $("a").on("click", function (event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+  
+        var hash = this.hash;
+        $("html, body").animate(
+          {
+            scrollTop: $(hash).offset().top,
+          },
+          800,
+          function () {
+            window.location.hash = hash;
+          }
+        );
+      }
+    });
+  });
+  
+  $(".menu-items a").click(function () {
+    $("#checkbox").prop("checked", false);
+  });
+  
