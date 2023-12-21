@@ -1,2 +1,2 @@
 # AmiJivdayaFL
-Freelance project usinh pure HTML, CSS, JS
+Freelance project using pure HTML, CSS, JS
