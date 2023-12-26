@@ -195,12 +195,10 @@ section {
 }
 
 @keyframes float {
-
     0%,
     100% {
         transform: translateY(0rem);
     }
-
     50% {
         transform: translateY(-7rem);
     }
@@ -208,8 +206,8 @@ section {
 
 .home .row .content h3 {
     font-size: 6.5rem;
+    font-weight: 400;
     color: #dae07e;
-    text-transform: uppercase;
 }
 
 /* ABOUT */
@@ -813,12 +811,12 @@ section {
 .seller .best-p1 {
     width: 250px;
     height: 370px;
-    /* border: 2px solid black; */
+    /* border: 2px solid green; */
 }
 
 .seller .best-p1 img {
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
 }
 
 .seller .best-p1 .price {
@@ -844,7 +842,7 @@ section {
 .best-seller .add-cart button {
     padding: 10px 15px;
     margin-top: 5px;
-    font-size: 14px;
+    font-size: 20px;
     cursor: pointer;
     text-transform: uppercase;
     background-color: #0c8c00;
@@ -866,6 +864,11 @@ section {
 .best-seller .add-cart button:hover a {
     color: #0c8c00;
 }
+
+.name-of-p {
+    font-size: 20px;
+}
+
 
 
 /* .best-seller .add-cart button {
