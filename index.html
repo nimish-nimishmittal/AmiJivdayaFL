@@ -18,7 +18,7 @@
         <a href="#" class="logo"><img src="image/amijivdayalogo.png" alt="logo"></a>
         <nav class="navbar">
             <a href="#home">home</a>
-            <a href="#about">our products</a>
+            <a href="product.html">our products</a>
             <a href="#menu">why amijivdaya?</a>
             <a href="#review">blog</a>
             <a href="#book">support</a>
@@ -202,7 +202,112 @@
                 </div>
             </div>
         </div>
+        <br><br><br><br><br><br>
     </section>
+
+    <section>
+        <div class="testimonial">
+          <div class="container">
+           <div class="testimonial__inner">
+             <div class="testimonial-slider">
+               <div class="testimonial-slide">
+                 <div class="testimonial_box">
+                   <div class="testimonial_box-inner">
+                     <div class="testimonial_box-top">
+                       <div class="testimonial_box-icon">
+                         <i class="fas fa-quote-right"></i>
+                       </div>
+                       <div class="testimonial_box-text">
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus optio facilis beatae.</p>
+                       </div>
+                       <div class="testimonial_box-img">
+                        <img src="https://i.ibb.co/hKgs8gm/profile.jpg" alt="profile">
+                      </div>
+                      <div class="testimonial_box-name">
+                        <h4>John Doe</h4>
+                     </div>
+                     <div class="testimonial_box-job">
+                       <p>MANAGER</p>
+                     </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+               <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-top">
+                      <div class="testimonial_box-icon">
+                        <i class="fas fa-quote-right"></i>
+                      </div>
+                      <div class="testimonial_box-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus optio facilis beatae.</p>
+                      </div>
+                      <div class="testimonial_box-img">
+                       <img src="https://i.ibb.co/hKgs8gm/profile.jpg" alt="profile">
+                     </div>
+                     <div class="testimonial_box-name">
+                       <h4>John Doe</h4>
+                    </div>
+                    <div class="testimonial_box-job">
+                      <p>CEO</p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-top">
+                      <div class="testimonial_box-icon">
+                        <i class="fas fa-quote-right"></i>
+                      </div>
+                      <div class="testimonial_box-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus optio facilis beatae.</p>
+                      </div>
+                      <div class="testimonial_box-img">
+                       <img src="https://i.ibb.co/hKgs8gm/profile.jpg" alt="profile">
+                     </div>
+                     <div class="testimonial_box-name">
+                       <h4>John Doe</h4>
+                    </div>
+                    <div class="testimonial_box-job">
+                      <p>Co-Founder</p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-top">
+                      <div class="testimonial_box-icon">
+                        <i class="fas fa-quote-right"></i>
+                      </div>
+                      <div class="testimonial_box-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus optio facilis beatae.</p>
+                      </div>
+                      <div class="testimonial_box-img">
+                       <img src="https://i.ibb.co/hKgs8gm/profile.jpg" alt="profile">
+                     </div>
+                     <div class="testimonial_box-name">
+                       <h4>John Doe</h4>
+                    </div>
+                    <div class="testimonial_box-job">
+                      <p>SEO</p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             </div>
+           </div>
+          </div>
+        </div>
+    </section>
+
 
     
 
@@ -382,7 +487,7 @@
 
 
 
-    <section class="footer">
+    <!-- <section class="footer">
         <div class="box-container">
             <div class="box">
                 <h3>our branches</h3>
@@ -417,10 +522,42 @@
             </div>
         </div>
         <div class="credit">created by <span>mr. web designer</span> | all rights reserved</div>
-    </section>
+    </section> -->
+    
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
+<script>
+    $(document).ready(function() {
+    $('.testimonial-slider').slick({
+        autoplay: true,
+        autoplaySpeed: 1000,
+        speed: 600,
+        draggable: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        responsive: [
+            {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                }
+            }
+        ]
+    });
+}); 
+</script>
 </html>
