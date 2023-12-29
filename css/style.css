@@ -974,3 +974,32 @@ section {
         }
     }
 }
+
+
+.logos{
+    display: flex;
+    padding-top: 45px;
+    /* padding: 50px; */
+    
+
+}
+
+.wallet-image img{
+ width: 100px;
+ padding-left: 35px;
+}
+
+.wallet{
+    /* font-size: x-large; */
+    margin-left:35px;
+    margin-top:5px;
+    padding: 5px;
+    
+}
+.wallet h3{
+    font-size: x-large;
+}
+.wallet p{
+   font-size: 1.6rem;
+   color:var(--light-color);
+}
