@@ -206,7 +206,42 @@ overflow: hidden;   }
   margin-left: 25px;
 }
 }
+@media(min-width: 301px) and (max-width: 500px) {
 
+  .header{
+  width: 280px;
+  position: fixed;
+  }
+  .btn1{
+    width: 70px;
+
+  }
+  .header a img{
+    width: 120px;
+  }
+  .headd{
+    margin-left: 0;
+  }
+  .suppimage img{
+    display: none;
+    overflow: hidden;
+  }
+  .suppimage {
+    display: none;
+    overflow: hidden;
+  }
+  .headd form{
+    width: 330px;
+    overflow: hidden;
+  }
+  .bird img{
+    display: none;
+  }
+  .search-box{
+    height:30px;
+  }
+
+}
 
 @media (max-width: 991px) {
   html {
