@@ -166,6 +166,7 @@ section {
 
 .home {
     height: 100vh;
+    width: 100%;
     padding-top: 12rem;
     background: url(../image/amijivdbkgd.jpg) no-repeat;
     background-position: center;
@@ -1018,7 +1019,8 @@ section {
 
 .greeen{
     display: flex;
-     background: #183730;;
+     background: #183730;
+     width: 100%;
 }
 .right{
   margin-top:30%;
@@ -1295,6 +1297,7 @@ border: 1px solid var(--material-theme-black, #000);
 .last{
     margin-top: 100px;
     width: 100%;
+    height: 100%;
 height: 480px;
 flex-shrink: 0;
 border-radius: 6px;
@@ -1317,4 +1320,155 @@ margin-top: 120px;
 .burd img{
     margin-top: 80px;
     width: 400px;
+}
+
+
+@media (max-width: 768px){
+    .greeen{
+        display: flex;
+        flex-direction: column;
+
+
+        /* margin-left: 10%; */
+    }
+    #uni{
+        margin-top: 0;
+        width: 100%;
+    }
+    .greeen-text,.right,.left{
+        margin-left: 10%;
+
+    }
+    .greeen-text{
+      max-width: 500px; 
+      min-width: 300px;
+    }
+    .last{
+        display: flex;
+        /* flex-direction: column; */
+        flex-direction: row;
+        min-width: 100%;
+        min-height: 100%;
+       
+    }
+    .texttt{
+        margin-left: 0;
+        margin-top: 0;
+        width: 500px;
+        /* font-size: 20px; */
+    }
+    .burd img {
+        width: 200px;
+    }
+    .burd{
+        width: 200px;
+    }
+    .right img{
+
+        max-width: 500px;
+        margin-left: 0;
+    }
+    .revieww{
+        /* overflow: hidden; */
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        
+    }
+    .review-card{
+       width: 250px;
+     
+    }
+}
+
+@media(min-width: 301px) and (max-width: 500px){
+    .greeen{
+        display: flex;
+        flex-direction: column;
+        min-width: 302px;
+        max-width: 500px;
+        /* margin-left: 10%; */
+    }
+    #uni{
+        margin-top: 0;
+        width: 100%;
+    }
+    .greeen-text,.right,.left{
+        margin-left: 0%;
+    }
+    .greeen-text p{
+        max-width: 500px;
+        min-width: 301px;
+        font-size: 45px;
+
+    }
+    .right img,.left img{
+
+        width: 300px;
+        margin-left: 0;
+    }
+    .greeen-text{
+        width: 300px;
+    }
+
+    .last{
+        display: flex;
+        flex-direction: column;
+       min-width: 302px;
+       max-width: 500px;
+        height: 100%;
+        margin-top: 0;
+       
+    }
+    .texttt{
+        margin-left: 0;
+        margin-top: 0;
+        width: 500px;
+        font-size: 20px;
+    }
+    .burd img {
+        width: 200px;
+    }
+    .burd{
+        width: 200px;
+    }
+    .company{
+        display: flex;
+        flex-direction:column;
+    }
+    .right-side{
+        margin-top:5px ;
+        margin-bottom: 5px;
+    }
+    .revieww{
+        /* max-width: 300px; */
+        margin-left:0 ;
+      
+     }
+     .review-card{
+      width: 200px;
+        margin-left:5px ;
+    }
+    .card-container{
+        width: 305px;
+       
+    }
+    .cardss img{
+        width: 305px;
+        margin-left: 0;
+    }
+    .burd img{
+        width: 200px;
+    }
+    .home{
+        min-width: 301px;
+        max-width: 500px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .content{
+    /* width: 100%; */
+    margin-top: 5%;
+    }
 }
