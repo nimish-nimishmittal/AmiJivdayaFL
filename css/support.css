@@ -1,0 +1,322 @@
+
+.support{
+    display: flex;
+    margin-left: 0;
+}
+
+form {
+    
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    /* display: flex; */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+#termsCheckbox {
+    display: none;
+  }
+
+  #customCheckbox {
+    width: 20px;
+    height: 20px;
+    /* border: 1px solid #999; */
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+  }
+
+  #customCheckbox::before {
+    content: "\2713"; /* Unicode checkmark character */
+    font-size: 16px;
+    color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #termsText {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  #termsCheckbox:checked + #customCheckbox::before {
+    color: #007BFF; /* Change the color when checked */
+  }
+
+button {
+    display: flex;
+    padding: 8px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: var(--Corners, 12px);
+background: var(--01, #013328);
+color: white;
+
+}
+
+.terms{
+    margin-top: 5px;
+}
+.headd{
+    margin-left: 74px;
+    /* margin-top: 154px; */
+   
+}
+.headd form{
+    margin-top: 154px;
+    height: 511px;
+
+}
+.headd form h1{
+    font-size: 47px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -0.142px;
+color: #013328;
+}
+
+.suppimage{
+    margin-left: 200px;
+    margin-top: 154px;
+    height: 511px;
+    width: 616px;
+    display: flex;
+}
+.suppimage img{
+    height: 511px;
+}
+.headd form label{
+    font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+}
+.imagee{
+    display: flex;
+    margin-top: 0px;
+}
+.support {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+  }
+  .imagee img{
+    margin-top: 0px;
+  }
+  
+  .support-content {
+    display: flex;
+    width: 100%; /* Adjust the width as needed */
+    margin: auto;
+  }
+  
+  .form-container {
+    width: 50%; /* Adjust the width as needed */
+  }
+  
+  .image-container {
+    width: 50%; /* Adjust the width as needed */
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+  .contact{
+    display: flex;
+  }
+
+  .birdd img{
+    margin-left: 0;
+  }
+.bird{
+    margin-left: 0;
+    margin-top: 190px;
+    height: 331px;
+    width: 335px;
+}
+
+  /* media queries */
+
+
+@media(min-width: 501px) and (max-width: 768px) {
+
+
+    .headd form,.support{
+      /* margin-top:25px ; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 25px;
+        margin-top: 75px;
+        max-width: 300px;
+        /* padding-right: 2rem; */
+
+     
+
+
+    }
+    .suppimage img{
+margin-left: 0;
+width: 150px; 
+/* margin-left: 5px; */
+overflow: hidden;   }
+
+.suppimage{
+  width: 150px; 
+  margin-left: 1px;
+  /* overflow: hidden; */
+  /* padding: 2rem; */
+}
+
+   .bird  img{
+      display: none;
+    }
+    .headd form h1{
+    font-size: 25px;
+    margin-top:25px ;
+    margin-bottom: 0;
+    margin-left: 25px;
+}
+.header{
+  display: flex;
+}
+.headd{
+  margin-left: 25px;
+}
+}
+@media(min-width: 301px) and (max-width: 500px) {
+
+  .header{
+  width: 280px;
+  position: fixed;
+  }
+  .btn1{
+    width: 70px;
+
+  }
+  .header a img{
+    width: 120px;
+  }
+  .headd{
+    margin-left: 0;
+  }
+  .suppimage img{
+    display: none;
+    overflow: hidden;
+  }
+  .suppimage {
+    display: none;
+    overflow: hidden;
+  }
+  .headd form{
+    width: 330px;
+    overflow: hidden;
+  }
+  .bird img{
+    display: none;
+  }
+ 
+
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+}
+
+.header {
+    padding: 1rem;
+    position: fixed;
+}
+
+section {
+    padding: 2rem;
+}
+
+  .suppimage img{
+    margin-left: 0;
+  }
+  .bird img{
+    display: none;
+  }
+
+  .header{
+    padding: 1rem;
+    display: flex;
+    /* overflow: hidden; */
+  }
+  .section {
+    padding: 2rem;
+  }
+ .suppimage img{
+  width: 230px;
+ }
+   .heading {
+        font-size: 6rem;
+    }
+
+    .heading span {
+        font-size: 2.3rem;
+    }
+
+    #menu-btn {
+        display: initial;
+    }
+
+    #menu-btn.fa-times {
+        transform: rotate(180deg);
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header .navbar a {
+        display: block;
+        font-size: 2.2rem;
+        margin: 0;
+        padding: 1.5rem 2rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+.header .navbar.active{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .menu-btn{
+    display: initial;
+  }
+}
+
